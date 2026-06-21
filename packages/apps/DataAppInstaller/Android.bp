@@ -1,0 +1,22 @@
+//
+// SPDX-FileCopyrightText: 2026 VariationUI
+// SPDX-License-Identifier: Apache-2.0
+//
+
+android_app {
+    name: "DataAppInstaller",
+
+    srcs: ["src/**/*.java"],
+    manifest: "AndroidManifest.xml",
+
+    platform_apis: true,
+    product_specific: true,
+    privileged: true,
+    certificate: "platform",
+    package_name: "org.varia.dataappinstaller",
+    privapp_allowlist: "privapp_allowlist_org.varia.dataappinstaller.xml",
+
+    optimize: {
+        enabled: true,
+    },
+}
