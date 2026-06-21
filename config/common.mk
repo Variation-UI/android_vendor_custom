@@ -1,5 +1,8 @@
 # Common PixelOS stuff.
 
+# VariationOS specific stuff
+$(call inherit-product, vendor/custom/config/varia.mk)
+
 # Bootanimation
 ifeq ($(strip $(TARGET_SCREEN_WIDTH)),)
     $(warning "TARGET_SCREEN_WIDTH is undefined, assuming 1080p")
